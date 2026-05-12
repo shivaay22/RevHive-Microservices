@@ -6,7 +6,16 @@
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
+        <module name="config-server" />
         <module name="auth-service" />
+        <module name="review-service" />
+        <module name="analytics-service" />
+        <module name="api-gateway" />
+        <module name="user-service" />
+        <module name="common-library" />
+        <module name="ai-service" />
+        <module name="notification-service" />
+        <module name="service-registry" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
@@ -15,7 +24,16 @@
   </component>
   <component name="JavacSettings">
     <option name="ADDITIONAL_OPTIONS_OVERRIDE">
+      <module name="ai-service" options="-parameters" />
+      <module name="analytics-service" options="-parameters" />
+      <module name="api-gateway" options="-parameters" />
       <module name="auth-service" options="-parameters" />
+      <module name="common-library" options="-parameters" />
+      <module name="config-server" options="-parameters" />
+      <module name="notification-service" options="-parameters" />
+      <module name="review-service" options="-parameters" />
+      <module name="service-registry" options="-parameters" />
+      <module name="user-service" options="-parameters" />
     </option>
   </component>
 </project>
