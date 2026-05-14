@@ -1,7 +1,13 @@
 package com.revhive.analytics;
 
+
+import org.springframework.boot.SpringApplication;
+import org.springframework.boot.autoconfigure.SpringBootApplication;
+
+@SpringBootApplication
 public class Analytics {
     public static void main(String[] args) {
-        System.out.println("Added analytics service");
+
+        SpringApplication.run(Analytics.class,args);
     }
 }
