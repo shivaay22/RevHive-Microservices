@@ -2,6 +2,7 @@
 <project version="4">
   <component name="CompilerConfiguration">
     <annotationProcessing>
+      <profile default="true" name="Default" enabled="true" />
       <profile name="Maven default annotation processors profile" enabled="true">
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
@@ -17,6 +18,15 @@
         <module name="notification-service" />
         <module name="service-registry" />
       </profile>
+      <profile name="Annotation profile for post" enabled="true">
+        <sourceOutputDir name="target/generated-sources/annotations" />
+        <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
+        <outputRelativeToContentRoot value="true" />
+        <processorPath useClasspath="false">
+          <entry name="$MAVEN_REPOSITORY$/org/projectlombok/lombok/1.18.46/lombok-1.18.46.jar" />
+        </processorPath>
+        <module name="post" />
+      </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
       <module name="RevHiveMicroservices" target="1.5" />
@@ -31,6 +41,7 @@
       <module name="common-library" options="-parameters" />
       <module name="config-server" options="-parameters" />
       <module name="notification-service" options="-parameters" />
+      <module name="post" options="-parameters" />
       <module name="review-service" options="-parameters" />
       <module name="service-registry" options="-parameters" />
       <module name="user-service" options="-parameters" />
