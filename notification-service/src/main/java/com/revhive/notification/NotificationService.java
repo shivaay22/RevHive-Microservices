@@ -1,7 +1,12 @@
 package com.revhive.notification;
 
+
+import org.springframework.boot.SpringApplication;
+import org.springframework.boot.autoconfigure.SpringBootApplication;
+
+@SpringBootApplication
 public class NotificationService {
     public static  void main(String[] args) {
-        System.out.println("Added Notification service");
+        SpringApplication.run(NotificationService.class,args);
     }
 }
